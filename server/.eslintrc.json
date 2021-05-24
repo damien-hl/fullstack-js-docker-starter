@@ -1,0 +1,27 @@
+{
+  "root": true,
+  "env": {
+    "commonjs": true,
+    "es2020": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended-script",
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["jest", "prettier"],
+  "parserOptions": {
+    "ecmaVersion": 11
+  },
+  "settings": {
+    "jest": {
+      "version": 26
+    }
+  },
+  "rules": {
+    "prettier/prettier": "error"
+  }
+}

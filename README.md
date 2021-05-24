@@ -17,3 +17,16 @@ Redis
 
 ### Serveur web
 Nginx
+
+### Linter
+ESLint
+
+### Formatter
+Prettier
+
+## Prérequis
+
+### Docker
+
+## Meta
+Damien Heulin – [Twitter](https://twitter.com/damien_hl) – [Mail](mailto:damienheulin87@gmail.com) – [Github](https://github.com/damien-hl)

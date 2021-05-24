@@ -1,0 +1,23 @@
+version: '3.1'
+
+services:
+    # web:
+    server:
+        container_name: js-server
+        image: node:lts-alpine
+        working_dir: /home/node/server
+        env_file:
+            - .env.development
+        volumes:
+            - ./server:/home/node/server        
+        expose:
+            - 8080
+        ports:
+            - 8080:8080
+        # depends_on: 
+        #     - database
+        #     - cache
+        command: ["yarn", "dev"]
+    # client:
+    # database:
+    # client:
