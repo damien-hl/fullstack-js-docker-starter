@@ -1,4 +1,4 @@
-const Fastify = require("fastify");
+import * as Fastify from "fastify";
 
 const createApp = (options) => {
   const fastify = Fastify.fastify(options);
@@ -10,4 +10,4 @@ const createApp = (options) => {
   return fastify;
 };
 
-module.exports = createApp;
+export default createApp;

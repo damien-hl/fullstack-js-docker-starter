@@ -8,19 +8,25 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:node/recommended-script",
     "plugin:jest/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["jest", "prettier"],
+  "plugins": [
+    "jest",
+    "prettier"
+  ],
   "parserOptions": {
-    "ecmaVersion": 11
+    "ecmaVersion": 11,
+    "sourceType": "module"
   },
   "settings": {
     "jest": {
       "version": 26
     }
   },
+  "ignorePatterns": [
+    "dist/*"
+  ],
   "rules": {
     "prettier/prettier": "error"
   }

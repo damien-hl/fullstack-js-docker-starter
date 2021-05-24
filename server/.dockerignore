@@ -1,2 +1,11 @@
-.gitignore
+# Dependency directories
 node_modules
+
+# App build
+dist/*
+
+# Git files
+.gitignore
+
+# Visual Studio Code settings
+.vscode
