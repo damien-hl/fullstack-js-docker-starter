@@ -104,3 +104,15 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Cache folder
+cache/*
+!cache/.gitkeep 
+
+# Database folder
+database/*
+!database/.gitkeep
+
+# Uploads folder
+uploads/*
+!uploads/.gitkeep
