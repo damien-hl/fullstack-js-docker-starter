@@ -1,0 +1,8 @@
+# Dependency directories
+node_modules
+
+# App build
+dist/*
+
+# Visual Studio Code settings
+.vscode
