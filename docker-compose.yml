@@ -57,5 +57,9 @@ services:
         restart: unless-stopped
         ports:
             - 27017:27017
-
-    # client:
+            
+    cache:
+        container_name: js-cache
+        image: redis:alpine
+        ports:
+            - 6379:6379
