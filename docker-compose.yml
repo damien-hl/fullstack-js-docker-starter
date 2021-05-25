@@ -45,8 +45,17 @@ services:
             - 3000
         ports:
             - 3000:3000
-        command: ["yarn", "start"]
-
-    # database:
+        command: ["yarn", "start"]     
+            
+    database:
+        container_name: js-database
+        image: mongo
+        env_file:
+            - .env.development
+        volumes:
+            - "./database/data:/data/db"
+        restart: unless-stopped
+        ports:
+            - 27017:27017
 
     # client:
